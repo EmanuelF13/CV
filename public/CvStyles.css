@@ -379,3 +379,37 @@ about.projects .box
     width:28px;
     height:20px;
     }
+
+    /* This is for the printing pdf part*/
+
+@media print {
+    body * {
+       /* visibility: hidden;*/  /* part to hide at the time of print */
+       -webkit-print-color-adjust: exact !important;
+
+    }
+
+    #toPDFConverter {
+        visibility: hidden !important; /* To hide */
+    }
+
+    #page-wrapper * {
+        visibility: visible; /*Print only required part */
+        /* text-align: left; */
+        -webkit-print-color-adjust: exact !important;
+    }
+}
+
+.legend  {
+    background: #9DD2E2 !important;
+  }
+
+  .downloadBtn {
+    background-color: #003147;
+    color: #ffffff;
+    position: absolute;
+    left:  20px;
+    bottom:  10px;
+    padding: 4px;
+    text-align: center;
+}

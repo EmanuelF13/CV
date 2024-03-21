@@ -89,5 +89,8 @@ var filePathForDe ="./Languages/german.json";
 	        }
         console.log("The language specified is not in my data base");
 	}
-
+function converter(){
+console.log("Converting HTML to PDF");
+window.print();
+}
 
