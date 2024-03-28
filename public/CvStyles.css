@@ -5,6 +5,7 @@ margin: 0;
 padding: 0;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
+-moz-box-sizing: border-box;
 }
 
 body
@@ -367,29 +368,92 @@ about.projects .box
  }
 
   #espFlag{
-  background: linear-gradient(red 25%, yellow 25%, yellow 75%,  red 75%);
-  background-size: contain;
-  width:28px;
-  height:20px;
+    background: linear-gradient(red 25%, yellow 25%, yellow 75%,  red 75%);
+    background-size: contain;
+    width:28px;
+    height:20px;
   }
-
-    #deFlag{
+ #deFlag{
     background: linear-gradient(black 25%, red 25%, red 75%,  yellow 75%);
     background-size: contain;
     width:28px;
     height:20px;
     }
 
+ #catFlag{
+    background: linear-gradient(yellow ,red 25%, yellow 25%, red 35%,  yellow 45%, red 55%, yellow 65%, red 75%, yellow 95%);
+    background-size: contain;
+    width:28px;
+    height:20px;
+   }
+
     /* This is for the printing pdf part*/
-
-@media print {
-    body * {
-       /* visibility: hidden;*/  /* part to hide at the time of print */
-       -webkit-print-color-adjust: exact !important;
-
+ @page {
+      size: A4;
+      margin: 0;
     }
 
+    .page {
+      width: 21cm;
+      min-height: 29.7cm;
+      padding: 2cm;
+      margin: 1cm auto;
+      border: 1px #D3D3D3 solid;
+      border-radius: 5px;
+      background: white;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .subpage {
+      padding: 1cm;
+      border: 5px red solid;
+      height: 256mm;
+      outline: 2cm #FFEAEA solid;
+    }
+
+@media print {
+    html, body  {
+        width: 210mm;
+       /* height: 297mm;*/
+       /* visibility: hidden;*/  /* part to hide at the time of print */
+       -webkit-print-color-adjust: exact !important;
+    }
+
+     .page {
+       margin: 0;
+       border: initial;
+       border-radius: initial;
+       width: initial;
+       min-height: initial;
+       box-shadow: initial;
+       background: initial;
+       page-break-after: always;
+     }
+
     #toPDFConverter {
+        visibility: hidden !important; /* To hide */
+    }
+    #cookBtn {
+        visibility: hidden !important; /* To hide */
+    }
+
+    #psyBtn{
+        visibility: hidden !important; /* To hide */
+    }
+
+     #itBtn{
+            visibility: hidden !important; /* To hide */
+        }
+
+     #allBtn{
+                        visibility: hidden !important; /* To hide */
+                    }
+
+    #flags {
+         visibility: hidden !important; /* To hide */
+    }
+
+    #loginForm {
         visibility: hidden !important; /* To hide */
     }
 
@@ -409,6 +473,46 @@ about.projects .box
     color: #ffffff;
     position: absolute;
     left:  20px;
+    bottom:  10px;
+    padding: 4px;
+    text-align: center;
+}
+
+  .cookBtn {
+    background-color: #003147;
+    color: #ffffff;
+    position: absolute;
+    left:  101px;
+    bottom:  10px;
+    padding: 4px;
+    text-align: center;
+}
+
+.psyBtn {
+    background-color: #003147;
+    color: #ffffff;
+    position: absolute;
+    left:  148px;
+    bottom:  10px;
+    padding: 4px;
+    text-align: center;
+}
+
+.itBtn{
+    background-color: #003147;
+    color: #ffffff;
+    position: absolute;
+    left:  235px;
+    bottom:  10px;
+    padding: 4px;
+    text-align: center;
+}
+
+.allBtn{
+    background-color: #003147;
+    color: #ffffff;
+    position: absolute;
+    left:  258px;
     bottom:  10px;
     padding: 4px;
     text-align: center;
