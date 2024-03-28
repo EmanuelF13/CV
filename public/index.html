@@ -149,7 +149,7 @@
       <div class="containerInfo Volunteering ">
         <h3 class="title" id="TV">VOLUNTEERING</h3>
         <ul>
-          <li>
+          <li id="VTY">
             <h5>MAR 2013 - 30 APR 2013</h5>
             <h4 id="VTI">Training at Younder</h4>
             <h4 id="VTIT">Applied and improved knowledge of Java, Hibernate, JSON, jQuery, Web Application, Scrum/Agile, etc.</h4>
@@ -159,7 +159,7 @@
             <h4 id="VHI">Himawari Iasi</h4>
             <h4 id="TVHI">Learned japanese and participated in organizing festivals.</h4>
           </li>
-          <li>
+          <li id="CTT">
             <h5>1 JAN 2010 - 1 JUN 2010</h5>
             <h4>Continental</h4>
             <h4 id="VCt">Testing applications.</h4>
@@ -168,7 +168,7 @@
       </div>
 
 
-      <div class="containerInfo Learning ">
+      <div class="containerInfo Learning " id="AL">
         <h3 class="title" id="TLearning">Learning</h3>
         <ul>
           <li>
@@ -211,7 +211,7 @@
 
     </div>
 
-    <button id="cookBtn" onclick="cookCV()" class="cookBtn" ><span class="text">Cook</span></button>
+    <button id="cookBtn" onclick="cookCV();cookLang();" class="cookBtn" ><span class="text">Cook</span></button>
     <button id="psyBtn" onclick="psychologyCV()" class="psyBtn"><span class="text">Psychology</span></button>
     <button id="itBtn" onclick="ITCv()" class="itBtn"><span class="text">IT</span></button>
     <button id="allBtn" onclick="fullCV()" class="allBtn"><span class="text">All</span></button>
@@ -329,7 +329,7 @@
 
     </div>
 
-    <div class="about skills">
+    <div class="about skills" id="PS">
       <h2 class="title2" id="PSs">Professional Skills</h2>
       <div class="box">
         <h4>Html</h4>
@@ -375,7 +375,7 @@
       </div>
     </div>
 
-    <div class="about interest">
+    <div class="about interest" id="TS">
       <h2 class="title2" id="TSs">Technical Skills</h2>
       <table style="width:100%">
         <tr>
@@ -401,7 +401,7 @@
       </table>
     </div>
 
-    <div class="about projects">
+    <div class="about projects" id="AP">
       <h2 class="title2" id="Proj">Projects</h2>
       <div class="box">
         <div class="project_name">
