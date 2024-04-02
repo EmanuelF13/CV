@@ -1,551 +1,596 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-  <title>Responsive Resume</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewpoint">
+    <title>Responsive Resume</title>
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+          integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+          referrerpolicy="no-referrer" rel="stylesheet"/>
 </head>
 <body>
 <!--Actual page-->
-<div id="contentToPrint" class="container">
-  <div class="left_side">
+<div class="container" id="contentToPrint">
+    <div class="left_side">
 
-    <div class="profileText">
-      <div class="img8x">
-        <img class="CVfoto" src="images/CVPic.jpg" alt="Frenchel Emanuel CV">
-      </div>
-      <h2>Frenchel Emanuel<br><span id="TOcupation">Software Developer</span></h2>
-    </div>
+        <div class="profileText">
+            <div class="img8x">
+                <img alt="Frenchel Emanuel CV" class="CVfoto" id="cvFoto" src="images/CVPic.jpg">
+            </div>
+            <h2>Frenchel Emanuel<br><span id="TOcupation">Software Developer</span></h2>
+        </div>
 
-    <div class="containerInfo">
-      <h3 class="title" id="TCI">Contact Info</h3>
-      <ul>
-        <li>
-          <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-          <span class="text">+40 744 625 000</span>
-          <span class="text">(RO)</span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-phone" aria-hidden="true"></i></span>
-          <span class="text">+34 614 23 97 71</span>
-          <span class="text">(Spanish)</span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-envelope-o" aria-hidden="true"></i></span>
-          <span class="text">frenchel_emanuel@yahoo.com</span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-globe" aria-hidden="true"></i></span>
-          <span class="text"><a href="https://mycv-bb6cd.web.app">My Web Page</a></span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-linkedin-square" aria-hidden="true"></i></span>
-          <span class="text"><a href="https://www.linkedin.com/in/emanuel-frenchel-319458267/">LinkedIn</a></span>
-        </li>
-        <li>
-          <span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span>
-          <span class="text">Spain, Taragona, Cambrils</span>
-        </li>
-        <li>
-          <span class="icon"> <i class="fa fa-github" aria-hidden="true"></i></span>
-          <span class="text"><a href="https://github.com/EmanuelF13?tab=repositories">GitHub</a></span>
-        </li>
+        <div class="containerInfo">
+            <h3 class="title" id="TCI">Contact Info</h3>
+            <ul>
+                <li hidden>
+                    <span class="icon"><i aria-hidden="true" class="fa fa-phone"></i></span>
+                    <span class="text">+40 744 625 000</span>
+                    <span class="text">(RO)</span>
+                </li>
+                <li>
+                    <span class="icon"><i aria-hidden="true" class="fa fa-phone"></i></span>
+                    <span class="text">+34 614 23 97 71</span>
+                    <span class="text">(Spanish)</span>
+                </li>
+                <li hidden>
+                    <span class="icon"><i aria-hidden="true" class="fa fa-envelope-o"></i></span>
+                    <span class="text">frenchel_emanuel@yahoo.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i aria-hidden="true" class="fa fa-envelope-o"></i></span>
+                    <span class="text">emanuel.frenchel@gmail.com</span>
+                </li>
+                <li>
+                    <span class="icon"><i aria-hidden="true" class="fa fa-globe"></i></span>
+                    <span class="text"><a href="https://mycv-bb6cd.web.app">My Web Page</a></span>
+                </li>
+                <li>
+                    <span class="icon"><i aria-hidden="true" class="fa fa-linkedin-square"></i></span>
+                    <span class="text"><a
+                            href="https://www.linkedin.com/in/emanuel-frenchel-319458267/">LinkedIn</a></span>
+                </li>
+                <li>
+                    <span class="icon"><i aria-hidden="true" class="fa fa-map-marker"></i></span>
+                    <span class="text">Spain, Taragona, Cambrils</span>
+                </li>
+                <li>
+                    <span class="icon"> <i aria-hidden="true" class="fa fa-github"></i></span>
+                    <span class="text"><a href="https://github.com/EmanuelF13?tab=repositories">GitHub</a></span>
+                </li>
 
-      </ul>
-      <div id="flags">
-        <button id="roFlag" value="Ro" onclick="changeLanguage(this);" > <b class="tooltip"> RO <span class="tooltiptext">Romania</span></b> </button>
-        <button id="engFlag" value="En" onclick="changeLanguage(this);" > <b class="tooltip"> EN <span class="tooltiptext">United Kingdom</span></b> </button>
-        <button id="espFlag" value="Es" onclick="changeLanguage(this);" > <b class="tooltip">  ES <span class="tooltiptext">Spain</span></b> </button>
-        <button id="deFlag" value="De" onclick="changeLanguage(this);"  > <b class="tooltip"> DE <span class="tooltiptext">Germany</span></b> </button>
-        <button id="catFlag" value="Ca" onclick="changeLanguage(this);"  > <b class="tooltip"> CA <span class="tooltiptext">Catalan</span></b> </button>
+            </ul>
+            <div id="flags">
+                <button id="roFlag" onclick="changeLanguage(this);" value="Ro"><b class="tooltip"> RO <span
+                        class="tooltiptext">Romania</span></b></button>
+                <button id="engFlag" onclick="changeLanguage(this);" value="En"><b class="tooltip"> EN <span
+                        class="tooltiptext">United Kingdom</span></b></button>
+                <button id="espFlag" onclick="changeLanguage(this);" value="Es"><b class="tooltip"> ES <span
+                        class="tooltiptext">Spain</span></b></button>
+                <button id="deFlag" onclick="changeLanguage(this);" value="De"><b class="tooltip"> DE <span
+                        class="tooltiptext">Germany</span></b></button>
+                <button id="catFlag" onclick="changeLanguage(this);" value="Ca"><b class="tooltip"> CA <span
+                        class="tooltiptext">Catalan</span></b></button>
 
-      </div>
-    </div>
-
-
-    <div class="containerInfo education">
-      <h3 class="title" id="TEs">Education</h3>
-      <ul>
-        <li id="EMP">
-          <h5>2020 - 2022</h5>
-          <h4>Master Degree in Psychology</h4>
-          <h4>University "Alexandru Ioan Cuza" Iasi</h4>
-        </li>
-        <li id="ELP">
-          <h5>2017 - 2020</h5>
-          <h4>Bachelor Degree in Psychology</h4>
-          <h4>University "Alexandru Ioan Cuza" Iasi</h4>
-        </li>
-        <li id="EMC">
-          <h5>2010 - 2012</h5>
-          <h4>Master Degree in Computer Science</h4>
-          <h4>University "Alexandru Ioan Cuza" Iasi</h4>
-        </li>
-        <li id="ELC">
-          <h5>2007 - 2010</h5>
-          <h4>Bachelor Degree in Computer Science</h4>
-          <h4>University "Alexandru Ioan Cuza" Iasi</h4>
-        </li>
-        <li>
-          <h5>2007</h5>
-          <h4>BACCALAUREATE</h4>
-        </li>
-        <li>
-          <h5>1995-2007</h5>
-          <h4>High School</h4>
-          <h4>Liceul "Miron Constin" Iasi</h4>
-        </li>
-      </ul>
+            </div>
+        </div>
 
 
-      <div class="containerInfo language">
-        <h3 class="title" id="TL">Languages</h3>
-        <ul>
-          <li>
-            <span class="text">English</span>
-            <span class="percentage">
+        <div class="containerInfo education">
+            <h3 class="title" id="TEs">Education</h3>
+            <ul>
+                <li id="EMP" style="display:none">
+                    <h5>2020 - 2022</h5>
+                    <h4>Master Degree in Psychology</h4>
+                    <h4>University "Alexandru Ioan Cuza" Iasi</h4>
+                </li>
+                <li id="ELP" style="display:none">
+                    <h5>2017 - 2020</h5>
+                    <h4>Bachelor Degree in Psychology</h4>
+                    <h4>University "Alexandru Ioan Cuza" Iasi</h4>
+                </li>
+                <li id="EMC">
+                    <h5>2010 - 2012</h5>
+                    <h4>Master Degree in Computer Science</h4>
+                    <h4>University "Alexandru Ioan Cuza" Iasi</h4>
+                </li>
+                <li id="ELC">
+                    <h5>2007 - 2010</h5>
+                    <h4>Bachelor Degree in Computer Science</h4>
+                    <h4>University "Alexandru Ioan Cuza" Iasi</h4>
+                </li>
+                <li>
+                    <h5>2007</h5>
+                    <h4>BACCALAUREATE</h4>
+                </li>
+                <li>
+                    <h5>1995-2007</h5>
+                    <h4>High School</h4>
+                    <h4>Liceul "Miron Constin" Iasi</h4>
+                </li>
+            </ul>
+
+
+            <div class="containerInfo language">
+                <h3 class="title" id="TL">Languages</h3>
+                <ul>
+                    <li>
+                        <span class="text">English</span>
+                        <span class="percentage">
                           <div style="width: 100%;"></div>
                         </span>
 
-          </li>
-          <li>
-            <span class="text">German</span>
-            <span class="percentage">
+                    </li>
+                    <li>
+                        <span class="text">German</span>
+                        <span class="percentage">
                           <div style="width: 20%;"></div>
                         </span>
 
-          </li>
-          <li>
-            <span class="text">Italian</span>
-            <span class="percentage">
+                    </li>
+                    <li>
+                        <span class="text">Italian</span>
+                        <span class="percentage">
                           <div style="width: 15%;"></div>
                         </span>
 
-          </li>
-          <li>
-            <span class="text">Romanian</span>
-            <span class="percentage">
+                    </li>
+                    <li>
+                        <span class="text">Romanian</span>
+                        <span class="percentage">
                           <div style="width: 100%;"></div>
                         </span>
 
-          </li>
-          <li>
-            <span class="text">Spanish</span>
-            <span class="percentage">
+                    </li>
+                    <li>
+                        <span class="text">Spanish</span>
+                        <span class="percentage">
                           <div style="width: 33%;"></div>
                         </span>
 
-          </li>
-          <li>
-            <span class="text">Catalan</span>
-            <span class="percentage">
+                    </li>
+                    <li>
+                        <span class="text">Catalan</span>
+                        <span class="percentage">
                           <div style="width: 10%;"></div>
                         </span>
 
-          </li>
-        </ul>
-      </div>
+                    </li>
+                </ul>
+            </div>
 
-      <div class="containerInfo Volunteering ">
-        <h3 class="title" id="TV">VOLUNTEERING</h3>
-        <ul>
-          <li id="VTY">
-            <h5>MAR 2013 - 30 APR 2013</h5>
-            <h4 id="VTI">Training at Younder</h4>
-            <h4 id="VTIT">Applied and improved knowledge of Java, Hibernate, JSON, jQuery, Web Application, Scrum/Agile, etc.</h4>
-          </li>
-          <li>
-            <h5>2010 - 2012</h5>
-            <h4 id="VHI">Himawari Iasi</h4>
-            <h4 id="TVHI">Learned japanese and participated in organizing festivals.</h4>
-          </li>
-          <li id="CTT">
-            <h5>1 JAN 2010 - 1 JUN 2010</h5>
-            <h4>Continental</h4>
-            <h4 id="VCt">Testing applications.</h4>
-          </li>
-        </ul>
-      </div>
-
-
-      <div class="containerInfo Learning " id="AL">
-        <h3 class="title" id="TLearning">Learning</h3>
-        <ul>
-          <li>
-            <h5>3.March.2023 -present</h5>
-            <h4>Learning UI/UX</h4>
-          </li>
-          <li>
-            <h5>3.March.2023 -present</h5>
-            <h4>Learning about Google Ads certification</h4>
-          </li>
-          <li>
-            <h5>3.March.2023 -present</h5>
-            <h4>Python</h4>
-          </li>
-          <li>
-            <h5>3.March.2023 -present</h5>
-            <h4>Javascript</h4>
-            <h4>(Updating Information)</h4>
-          </li>
-          <li>
-            <h5>3.March.2023 -present</h5>
-            <h4>Java</h4>
-            <h4>(Updating Information)</h4>
-          </li>
-          <li>
-            <h5>3.March.2023 -present</h5>
-            <h4>Spanish</h4>
-          </li>
-          <li>
-            <h5>3.March.2023 -present</h5>
-            <h4 id="tinvt">Investment</h4>
-          </li>
-        </ul>
-      </div>
-
-<!--   <a href="./pdf/CV - Frenchel Emanuel.pdf" download class="downloadBtn"><span class="text">Download CV</span></a>-->
-      <button id="toPDFConverter" onclick="converter()" class="downloadBtn"><span class="text">Download</span></button>
+            <div class="containerInfo Volunteering ">
+                <h3 class="title" id="TV">VOLUNTEERING</h3>
+                <ul>
+                    <li id="VTY">
+                        <h5>MAR 2013 - 30 APR 2013</h5>
+                        <h4 id="VTI">Training at Younder</h4>
+                        <h4 id="VTIT">Applied and improved knowledge of Java, Hibernate, JSON, jQuery, Web Application,
+                            Scrum/Agile, etc.</h4>
+                    </li>
+                    <li>
+                        <h5>2010 - 2012</h5>
+                        <h4 id="VHI">Himawari Iasi</h4>
+                        <h4 id="TVHI">Learned japanese and participated in organizing festivals.</h4>
+                    </li>
+                    <li id="CTT">
+                        <h5>1 JAN 2010 - 1 JUN 2010</h5>
+                        <h4>Continental</h4>
+                        <h4 id="VCt">Testing applications.</h4>
+                    </li>
+                </ul>
+            </div>
 
 
+            <div class="containerInfo Learning " id="AL">
+                <h3 class="title" id="TLearning">Learning</h3>
+                <ul>
+                    <li hidden>
+                        <h5>3.March.2023 -present</h5>
+                        <h4>Learning UI/UX</h4>
+                    </li>
+                    <li>
+                        <h5>3.March.2023 -present</h5>
+                        <h4>Learning about Google Ads certification</h4>
+                    </li>
+                    <li>
+                        <h5>3.March.2023 -present</h5>
+                        <h4>Python</h4>
+                    </li>
+                    <li>
+                        <h5>3.March.2023 -present</h5>
+                        <h4>Javascript</h4>
+                        <h4>(Updating Information)</h4>
+                    </li>
+                    <li>
+                        <h5>3.March.2023 -present</h5>
+                        <h4>Java</h4>
+                        <h4>(Updating Information)</h4>
+                    </li>
+                    <li>
+                        <h5>3.March.2023 -present</h5>
+                        <h4>Spanish</h4>
+                    </li>
+                    <li>
+                        <h5>1.February.2024 -present</h5>
+                        <h4>Catalan</h4>
+                    </li>
+                    <li>
+                        <h5>3.March.2023 -present</h5>
+                        <h4 id="tinvt">Investment</h4>
+                    </li>
+                </ul>
+            </div>
+
+            <!--   <a href="./pdf/CV - Frenchel Emanuel.pdf" download class="downloadBtn"><span class="text">Download CV</span></a>-->
+            <button class="downloadBtn" id="toPDFConverter" onclick="converter()"><span class="text">Download</span>
+            </button>
+
+
+        </div>
+
+        <button class="cookBtn" id="cookBtn" onclick="cookCV();cookLang();changeLanguage(this)" value="En"><span
+                class="text">Cook</span></button>
+        <button class="psyBtn" id="psyBtn" onclick="psychologyCV();psyLang();changeLanguage(this)" value="En"><span
+                class="text">Psychology</span></button>
+        <button class="itBtn" id="itBtn" onclick="itMenuReg();itLang();changeLanguage(this)" value="En"><span
+                class="text">IT</span>
+        </button>
+        <button class="allBtn" id="allBtn" onclick="fullCV();changeLanguage(this)" value="En"><span
+                class="text">All</span>
+        </button>
 
     </div>
-
-    <button id="cookBtn" onclick="cookCV();cookLang();" class="cookBtn" ><span class="text">Cook</span></button>
-    <button id="psyBtn" onclick="psychologyCV()" class="psyBtn"><span class="text">Psychology</span></button>
-    <button id="itBtn" onclick="ITCv()" class="itBtn"><span class="text">IT</span></button>
-    <button id="allBtn" onclick="fullCV()" class="allBtn"><span class="text">All</span></button>
-
-  </div>
-  <div class="right_side">
-    <div class="about">
-      <h2 class="title2" id="TProfile">Profile</h2>
-      <p id="Profile"> Posses 11+ years of experience working as a employee in large and small organizations across different range of industry sector
-        ,including banking, public sector, consulting and private sector. Additionally I have experience of software development, test life cycle, design panterns and clean code best practices.
-        Core technical skills include Java, Javascript, Splunk, Unix, Linux, SQL and experice with working in Waterfall, Scrum and Agile development environments.
-      </p>
-    </div>
-    <div class="about">
-      <h2 class="title2" id = "TEXp">Experience</h2>
-      <div class="box" id="IT_ESD">
-        <div class="year_company">
-          <h5>2014-2022</h5>
-          <h5>Unicredit Bank</h5>
+    <div class="right_side">
+        <div class="about">
+            <h2 class="title2" id="TProfile">Profile</h2>
+            <p id="Profile"> Posses 11+ years of experience working as a employee in large and small organizations
+                across different range of industry sector
+                ,including banking, public sector, consulting and private sector. Additionally I have experience of
+                software development, test life cycle, design panterns and clean code best practices.
+                Core technical skills include Java, Javascript, Splunk, Unix, Linux, SQL and experice with working in
+                Waterfall, Scrum and Agile development environments.
+            </p>
         </div>
-        <div class="text" >
-          <h4 id="TEOSD">Software Developer</h4>
-          <p id="Developer">Most of the work done here is on maintenance and creating new features.
-            Main applications that I worked on are: ALP, Monap, BMA, PFX, EuropeanGate, GPE.
-            Design software solutions by analyzing system performance standards,increaseing performance efficiency.
-            Analyzed systems flow,data usage, and work processes and investigated problem areas.
-            Planned ,tracked and managed deliverables on short-term sprints and long-term software deployments.
-            Developed and executed test procedures for software components.
-            *Most used languages are: Java, SQL, Splunk, HTML, CSS.*</p>
-        </div>
-      </div>
-
-      <div class="box" id="IT_EA">
-        <div class="year_company">
-          <h5>2012-2014</h5>
-          <h5>Vertical Design</h5>
-        </div>
-        <div class="text">
-          <h4 id="TEOA">Administrator</h4>
-          <p id="Administrator">Mantained  the firm website that I created. Other activities included PC maintenance
-            (software and hardware), plus updating internal automation application's. Analysed department
-            documents for apropriatedistribution and filling. Asisted varous business group with document
-            organization and dissemination during cqusition.Supported with improving operations and resolving
-            issues to deliver a better customer service</p>
-        </div>
-      </div>
-
-
-      <div class="box" id="IT_EAE">
-        <div class="year_company">
-          <h5>2010-2012</h5>
-          <h5>3 Starts & COMPANY</h5>
-        </div>
-        <div class="text">
-          <h4 id="TEOAE">Automation Engineer</h4>
-          <p id="Engineer">Developed a computer based system that monitored prodction equipment, and succesfully reduced maintainance cost by 68% in 1 year. Decreased the cycle times for casting by developing custom programs
-            in Visual basic for Application(VBA) with Microsoft Excel to automate repetitive calculation(ex: taxes) saving a lot in time and manpower.
-            Made a user interface for site to update on product more easily and to maintain stock data.
-          </p>
-        </div>
-      </div>
-       <div class="box" id="SELL_RDS" style="display:none">
+        <div class="about">
+            <h2 class="title2" id="TEXp">Experience</h2>
+            <div class="box" id="IT_ESD">
                 <div class="year_company">
-                  <h5>6 MONTHS</h5>
-                  <h5>RCS-RDS Romania(8 months)</h5>
+                    <h5>2014-2022</h5>
+                    <h5>Unicredit Bank</h5>
                 </div>
                 <div class="text">
-                  <h4 id="ETSA">Sales Agent</h4>
-                  <p id="ETSAt"> Responded to customer questions and rang up sales. Handled customer inquiries in-person and over the phone. Presented customer with detailed information on available promotions and specials.
-                    Addressed customer concerns including issues such as instalment and hadeling special request.</p>
+                    <h4 id="TEOSD">Software Developer</h4>
+                    <p id="Developer">Most of the work done here is on maintenance and creating new features.
+                        Main applications that I worked on are: ALP, Monap, BMA, PFX, EuropeanGate, GPE.
+                        Design software solutions by analyzing system performance standards,increaseing performance
+                        efficiency.
+                        Analyzed systems flow,data usage, and work processes and investigated problem areas.
+                        Planned ,tracked and managed deliverables on short-term sprints and long-term software
+                        deployments.
+                        Developed and executed test procedures for software components.
+                        *Most used languages are: Java, SQL, Splunk, HTML, CSS.*</p>
                 </div>
-       </div>
+            </div>
+
+            <div class="box" id="IT_EA">
+                <div class="year_company">
+                    <h5>2012-2014</h5>
+                    <h5>Vertical Design</h5>
+                </div>
+                <div class="text">
+                    <h4 id="TEOA">Administrator</h4>
+                    <p id="Administrator">Mantained the firm website that I created. Other activities included PC
+                        maintenance
+                        (software and hardware), plus updating internal automation application's. Analysed department
+                        documents for apropriatedistribution and filling. Asisted varous business group with document
+                        organization and dissemination during cqusition.Supported with improving operations and
+                        resolving
+                        issues to deliver a better customer service</p>
+                </div>
+            </div>
+
+
+            <div class="box" id="IT_EAE">
+                <div class="year_company">
+                    <h5>2010-2012</h5>
+                    <h5>3 Starts & COMPANY</h5>
+                </div>
+                <div class="text">
+                    <h4 id="TEOAE">Automation Engineer</h4>
+                    <p id="Engineer">Developed a computer based system that monitored prodction equipment, and
+                        succesfully reduced maintainance cost by 68% in 1 year. Decreased the cycle times for casting by
+                        developing custom programs
+                        in Visual basic for Application(VBA) with Microsoft Excel to automate repetitive calculation(ex:
+                        taxes) saving a lot in time and manpower.
+                        Made a user interface for site to update on product more easily and to maintain stock data.
+                    </p>
+                </div>
+            </div>
+            <div class="box" id="SELL_RDS" style="display:none">
+                <div class="year_company">
+                    <h5>6 MONTHS</h5>
+                    <h5>RCS-RDS Romania(8 months)</h5>
+                </div>
+                <div class="text">
+                    <h4 id="ETSA">Sales Agent</h4>
+                    <p id="ETSAt"> Responded to customer questions and rang up sales. Handled customer inquiries
+                        in-person and over the phone. Presented customer with detailed information on available
+                        promotions and specials.
+                        Addressed customer concerns including issues such as instalment and hadeling special
+                        request.</p>
+                </div>
+            </div>
             <div class="box" id="COOK_MP" style="display:none">
-              <div class="year_company">
-                <h5>1 Year</h5>
-                <h5>MamaMia Pizza Restaurant</h5>
-              </div>
-              <div class="text">
-                <h4 id="ETWB">Waitress & Busser</h4>
-                <p id="ETWBt"> Consistently maintained above 98% in on-time delivery metric. Responsible for
-                  delivering orders efficiently while maintaining high customer.</p>
-              </div>
-          </div>
-      <div class="box" id="COOK_PF" style="display:none">
-        <div class="year_company">
-          <h5>1 Year</h5>
-          <h5>Paliva-ar foamea Restaurant</h5>
-        </div>
-        <div class="text">
-          <h4 id="EKT">Kitchen trainee</h4>
-          <p id="EKTt"> Gained valuable experience as a kitchen helper for a busy restaurant for two years
-            -Assisted in preparation of food items, such as chopping and preparing
-            ingredients
-            -Responsible for washing dishes, keeping the floor clean and uncluttered
-            -Assisted the chef in developing menus for the restaurant</p>
+                <div class="year_company">
+                    <h5>1 Year</h5>
+                    <h5>MamaMia Pizza Restaurant</h5>
+                </div>
+                <div class="text">
+                    <h4 id="ETWB">Waitress & Busser</h4>
+                    <p id="ETWBt"> Consistently maintained above 98% in on-time delivery metric. Responsible for
+                        delivering orders efficiently while maintaining high customer.</p>
+                </div>
+            </div>
+            <div class="box" id="COOK_PF" style="display:none">
+                <div class="year_company">
+                    <h5>1 Year</h5>
+                    <h5>Paliva-ar foamea Restaurant</h5>
+                </div>
+                <div class="text">
+                    <h4 id="EKT">Kitchen trainee</h4>
+                    <p id="EKTt"> Gained valuable experience as a kitchen helper for a busy restaurant for two years
+                        -Assisted in preparation of food items, such as chopping and preparing
+                        ingredients
+                        -Responsible for washing dishes, keeping the floor clean and uncluttered
+                        -Assisted the chef in developing menus for the restaurant</p>
+                </div>
+
+            </div>
+            <div class="box" id="COOK_Class" style="display:none">
+                <div class="year_company">
+                    <h5>1 Year</h5>
+                    <h5>Class Restaurant</h5>
+                </div>
+                <div class="text">
+                    <h4>Kitchen trainee</h4>
+                    <p> Performed bar closing duties thoroughly cleaning, sanitizing and replenishing
+                        stock.Regularly communicated with kitchen and bar staff to maintain smooth front
+                        house operations, minimizing potential service delay.Retained in-depth bar and menu item
+                        knowledge, providing expert recommendations to suit guest taste</p>
+                </div>
+
+            </div>
+
         </div>
 
-      </div>
-      <div class="box" id="COOK_Class" style="display:none">
-        <div class="year_company">
-          <h5>1 Year</h5>
-          <h5>Class Restaurant</h5>
-        </div>
-        <div class="text">
-          <h4>Kitchen trainee</h4>
-          <p> -Performed bar closing duties thoroughly cleaning, sanitizing and replenishing
-            stock.
-            -regularly communicated with kitchen and bar staff to maintain smooth front
-            house operations, minimizing potential service delay
-            -retained in-depth bar and menu item knowledge, providing expert
-            recommendations to suit guest taste</p>
+        <div class="about skills" id="PS">
+            <h2 class="title2" id="PSs">Professional Skills</h2>
+            <div class="box">
+                <h4>Html</h4>
+                <div class="percentage">
+                    <div style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>CSS</h4>
+                <div class="percentage">
+                    <div style="width: 60%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>Java</h4>
+                <div class="percentage">
+                    <div style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>Javascript</h4>
+                <div class="percentage">
+                    <div style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>SQL</h4>
+                <div class="percentage">
+                    <div style="width: 70%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>Python</h4>
+                <div class="percentage">
+                    <div style="width: 10%;"></div>
+                </div>
+            </div>
+            <div class="box">
+                <h4>UI/UX</h4>
+                <div class="percentage">
+                    <div style="width: 1%;"></div>
+                </div>
+            </div>
         </div>
 
-      </div>
+        <div class="about interest" id="TS">
+            <h2 class="title2" id="TSs">Technical Skills</h2>
+            <table style="width:100%">
+                <tr>
+                    <th style="text-align: left">Database</th>
+                    <td>Oracle, MySQL</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left">Language</th>
+                    <td>Java, JavaScript, SQL, HTML, XML</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left">Frameworks</th>
+                    <td>JSF, JSP, J2EE, Spring, Hibernate</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left">API's</th>
+                    <td>Servlet, EJB, JNDI(Java Naming and Directory Interface)</td>
+                </tr>
+                <tr>
+                    <th style="text-align: left">Servers</th>
+                    <td>Java Enterprise System, WebSphere(WAS)</td>
+                </tr>
+                <tr id="TSaP">
+                    <th style="text-align: left">Applications and others</th>
+                    <td>Windows, Linux, Microsoft Office (Word&trade;, Excel&trade; and PowerPoint&trade;), SPSS</td>
+                </tr>
+            </table>
+        </div>
 
+        <div class="about projects" id="AP">
+            <h2 class="title2" id="Proj">Projects</h2>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2016 - 2018</h5>
+                    <h5> Teaching at UAIC </h5>
+                </div>
+                <div class="text">
+                    <h4>FiiPractic</h4>
+                    <p id="FiiPractic">Teaching other people on how to program in
+                        Java.(https://ro-ro.facebook.com/fiipractic/)</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2014 - 2019</h5>
+                    <h5> Software Developer </h5>
+                </div>
+                <div class="text">
+                    <h4>PayFx (Payments Foreign Exchange)</h4>
+                    <p id="PFX">Instant exchange of different currency inside the bank.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2018 - 2019</h5>
+                    <h5> Software Developer </h5>
+                </div>
+                <div class="text">
+                    <h4>European Gate</h4>
+                    <p id="EG">Exchanging different type of currencies from different countries. (SEPA payments)
+                        Costumer Satisfaction service(Checking and mentioning why SEPA payments do not go throw).</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2020 - 2021</h5>
+                    <h5> Software Developer </h5>
+                </div>
+                <div class="text">
+                    <h4>ALP(Alpheus)</h4>
+                    <p id="ALP">Exchanging different type of currencies from different countries. (SEPA payments)
+                        Costumer Satisfaction service(Checking and mentioning why SEPA payments do not go throw).</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2020 - 2021</h5>
+                    <h5> Software Developer </h5>
+                </div>
+                <div class="text">
+                    <h4>PIL</h4>
+                    <p id="PIL">Wrapper that helps mainframe and java application to communicate.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2016 - 2017</h5>
+                    <h5>2021 - 2022</h5>
+                    <h5> Software Developer </h5>
+                </div>
+                <div class="text">
+                    <h4>BMA</h4>
+                    <p id="BMA">Monitoring application for all payments in the bank.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2013 - 2014</h5>
+                    <h5> Software Developer </h5>
+                </div>
+                <div class="text">
+                    <h4>PETI (patient eye tracking interface)</h4>
+                    <p id="PETI">Android application intended for patients with motor and verbal disabilities, to be
+                        able to communicate with
+                        the medical staff by blinking.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>Bachelor's degree project</h5>
+                </div>
+                <div class="text">
+                    <h4>E-Journal</h4>
+                    <p id="Journal">Web application destined for publishing and review articles. The user can even
+                        create webpages without
+                        using needing to know coding.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>High School project</h5>
+                </div>
+                <div class="text">
+                    <h4>Prehistoric Zoo</h4>
+                    <p id="Zoo">Web application that offers a convenient and attractive representation of a prehistoric
+                        zoo. Entities
+                        (anatomical features, species, habitat, ferocity, etc.) are represented with the help of Web
+                        Ontology
+                        Language (OWL).</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>Disertation &nbsp project</h5>
+                </div>
+                <div class="text">
+                    <h4>Face recognition</h4>
+                    <p id="FR">Implementing an improved facial recognition algorithm with minimal resources. (2 gb RAM
+                        and 1 gb
+                        memory) Probability of identifying a wrong person is 1 in 100.000.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2012-2013</h5>
+                </div>
+                <div class="text">
+                    <h4>Voice activation mp3 player</h4>
+                    <p id="VAMP">Search for melody from playlist using vocal input.</p>
+                </div>
+            </div>
+            <div class="box">
+                <div class="project_name">
+                    <h5>2008</h5>
+                </div>
+                <div class="text">
+                    <h4>Gaming Concepts</h4>
+                    <p id="GC">I learned to use OpenGl to design different images (2d) and the basic concepts of game
+                        graphics.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="about interest">
+            <h2 class="title2" id="TIntrests">Interests</h2>
+            <ul>
+                <li><i aria-hidden="true" class="fa fa-gamepad"></i>Games</li>
+                <li><i aria-hidden="true" class="fa fa-microphone"></i>Singing</li>
+                <li><i aria-hidden="true" class="fa fa-book"></i>Reading</li>
+                <li><i aria-hidden="true" class="fa fa-cutlery"></i>Cooking</li>
+                <li><i aria-hidden="true" class="fa fa-eye"></i>Meditation</li>
+                <li><i aria-hidden="true" class="fa fa-film"></i>Movies</li>
+            </ul>
+
+        </div>
+        <h6 style="font-weight: normal; text-align: right;">Last update: 30.11.2023.(13:22)</h6>
     </div>
-
-    <div class="about skills" id="PS">
-      <h2 class="title2" id="PSs">Professional Skills</h2>
-      <div class="box">
-        <h4>Html</h4>
-        <div class="percentage">
-          <div style="width: 90%;"></div>
-        </div>
-      </div>
-      <div class="box">
-        <h4>CSS</h4>
-        <div class="percentage">
-          <div style="width: 60%;"></div>
-        </div>
-      </div>
-      <div class="box">
-        <h4>Java</h4>
-        <div class="percentage">
-          <div style="width: 80%;"></div>
-        </div>
-      </div>
-      <div class="box">
-        <h4>Javascript</h4>
-        <div class="percentage">
-          <div style="width: 50%;"></div>
-        </div>
-      </div>
-      <div class="box">
-        <h4>SQL</h4>
-        <div class="percentage">
-          <div style="width: 70%;"></div>
-        </div>
-      </div>
-      <div class="box">
-        <h4>Python</h4>
-        <div class="percentage">
-          <div style="width: 10%;"></div>
-        </div>
-      </div>
-      <div class="box">
-        <h4>UI/UX</h4>
-        <div class="percentage">
-          <div style="width: 1%;"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="about interest" id="TS">
-      <h2 class="title2" id="TSs">Technical Skills</h2>
-      <table style="width:100%">
-        <tr>
-          <th style="text-align: left">Database</th>
-          <td>Oracle, MySQL</td>
-        </tr>
-        <tr>
-          <th style="text-align: left">Language</th>
-          <td>Java, JavaScript, SQL, HTML, XML</td>
-        </tr>
-        <tr>
-          <th style="text-align: left">Frameworks</th>
-          <td>JSF, JSP, J2EE, Spring, Hibernate</td>
-        </tr>
-        <tr>
-          <th style="text-align: left">API's</th>
-          <td>Servlet, EJB, JNDI(Java Naming and Directory Interface)</td>
-        </tr>
-        <tr>
-          <th style="text-align: left">Servers</th>
-          <td>Java Enterprise System, WebSphere(WAS)</td>
-        </tr>
-      </table>
-    </div>
-
-    <div class="about projects" id="AP">
-      <h2 class="title2" id="Proj">Projects</h2>
-      <div class="box">
-        <div class="project_name">
-          <h5>2016 - 2018</h5>
-          <h5> Teaching at UAIC </h5>
-        </div>
-        <div class="text">
-          <h4>FiiPractic</h4>
-          <p id="FiiPractic">Teaching other people on how to program in Java.(https://ro-ro.facebook.com/fiipractic/)</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>2014 - 2019</h5>
-          <h5> Software Developer </h5>
-        </div>
-        <div class="text">
-          <h4>PayFx (Payments Foreign Exchange)</h4>
-          <p id="PFX">Instant exchange of different currency inside the bank.</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>2018 - 2019</h5>
-          <h5> Software Developer </h5>
-        </div>
-        <div class="text">
-          <h4>European Gate</h4>
-          <p id="EG">Exchanging different type of currencies from different countries. (SEPA payments)
-            Costumer Satisfaction service(Checking and mentioning why SEPA payments do not go throw).</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>2020 - 2021</h5>
-          <h5> Software Developer </h5>
-        </div>
-        <div class="text">
-          <h4>ALP(Alpheus)</h4>
-          <p id="ALP">Exchanging different type of currencies from different countries. (SEPA payments)
-            Costumer Satisfaction service(Checking and mentioning why SEPA payments do not go throw).</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>2020 - 2021</h5>
-          <h5> Software Developer </h5>
-        </div>
-        <div class="text">
-          <h4>PIL</h4>
-          <p id="PIL">Wrapper that helps mainframe and java application to communicate.</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>2016 - 2017</h5>
-          <h5>2021 - 2022</h5>
-          <h5> Software Developer </h5>
-        </div>
-        <div class="text">
-          <h4>BMA</h4>
-          <p id="BMA">Monitoring application for all payments in the bank.</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>2013 - 2014</h5>
-          <h5> Software Developer </h5>
-        </div>
-        <div class="text">
-          <h4>PETI (patient eye tracking interface)</h4>
-          <p id="PETI">Android application intended for patients with motor and verbal disabilities, to be able to communicate with
-            the medical staff by blinking.</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>Bachelor's degree project</h5>
-        </div>
-        <div class="text">
-          <h4>E-Journal</h4>
-          <p id="Journal">Web application destined for publishing and review articles. The user can even create webpages without
-            using needing to know coding.</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>High School project</h5>
-        </div>
-        <div class="text">
-          <h4>Prehistoric Zoo</h4>
-          <p id="Zoo">Web application that offers a convenient and attractive representation of a prehistoric zoo. Entities
-            (anatomical features, species, habitat, ferocity, etc.) are represented with the help of Web Ontology
-            Language (OWL).</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>Disertation &nbsp project</h5>
-        </div>
-        <div class="text">
-          <h4>Face recognition</h4>
-          <p id="FR">Implementing an improved facial recognition algorithm with minimal resources. (2 gb RAM and 1 gb
-            memory) Probability of identifying a wrong person is 1 in 100.000.</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>2012-2013</h5>
-        </div>
-        <div class="text">
-          <h4>Voice activation mp3 player</h4>
-          <p id="VAMP">Search for melody from playlist using vocal input.</p>
-        </div>
-      </div>
-      <div class="box">
-        <div class="project_name">
-          <h5>2008</h5>
-        </div>
-        <div class="text">
-          <h4>Gaming Concepts</h4>
-          <p id="GC">I learned to use OpenGl to design different images (2d) and the basic concepts of game graphics.</p>
-        </div>
-      </div>
-    </div>
-
-
-    <div class="about interest">
-      <h2 class="title2" id="TIntrests">Interests</h2>
-      <ul>
-        <li><i class="fa fa-gamepad" aria-hidden="true"></i>Games</li>
-        <li><i class="fa fa-microphone" aria-hidden="true"></i>Singing</li>
-        <li><i class="fa fa-book" aria-hidden="true"></i>Reading</li>
-        <li><i class="fa fa-cutlery" aria-hidden="true"></i>Cooking</li>
-        <li><i class="fa fa-eye" aria-hidden="true"></i>Meditation</li>
-        <li><i class="fa fa-film" aria-hidden="true"></i>Movies</li>
-      </ul>
-
-    </div>
-    <h6 style="font-weight: normal; text-align: right;" >Last update: 30.11.2023.(13:22)</h6>
-  </div>
 </div>
 
-<link rel="stylesheet" type="text/css" href="CvStyles.css">
+<link href="CvStyles.css" rel="stylesheet" type="text/css">
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="./libs/html2canvas.min.js_0.5.0-beta4/cdnjs/html2canvas.min.js"></script>
@@ -554,5 +599,7 @@
 <script src="./js/Cv.js"></script>
 <script src="./js/psychology.js"></script>
 <script src="./js/cook.js"></script>
+<script src="./js/it.js"></script>
+<script src="./js/all.js"></script>
 
 </html>

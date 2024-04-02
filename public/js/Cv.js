@@ -1,4 +1,4 @@
-"use strict";
+
 var filePathForRo ="./Languages/IT/romana.json";
 var filePathForEn ="./Languages/IT/english.json";
 var filePathForEs ="./Languages/IT/spanish.json";
@@ -13,7 +13,7 @@ const langEs="Es";
 
 	function getLanguageFile(nameOfFlag){
 
-	if(nameOfFlag == null) {console.log("Something went bad!");return filePathForCa;} //don't know why this happens
+//	if(nameOfFlag == null) {console.log("Something went bad!");return filePathForCa;} //don't know why this happens, have to figure out in next release
         if (nameOfFlag.toUpperCase() === langRo.toUpperCase()) { console.log("Changed language to Ro"); return filePathForRo;  }
         else if (nameOfFlag.toUpperCase() === langEn.toUpperCase()) {  console.log("Changed language to En"); return filePathForEn; }
         else if (nameOfFlag.toUpperCase() === langEs.toUpperCase()) {  console.log("Changed language to Es"); return filePathForEs; }
@@ -61,14 +61,4 @@ window.print();
 }
 
 
-    function cookLang(){
-    filePathForRo = filePathForRo.replace("IT","Cook");
-    filePathForEn = filePathForEn.replace("IT","Cook");
-    filePathForEs = filePathForEs.replace("IT","Cook");
-    filePathForDe = filePathForDe.replace("IT","Cook");
-    filePathForCa = filePathForCa.replace("IT","Cook");
-    const catalanLanguage = "Ca";
-    changeLanguage(catalanLanguage);
-    console.log("Change done!");
-    }
 
